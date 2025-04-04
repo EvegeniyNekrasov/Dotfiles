@@ -1,0 +1,5 @@
+zsh/.secrets
+.ssh
+.DS_Store
+.AppleDouble
+.LSOverride
