@@ -1,9 +1,10 @@
 return {
-	"nyoom-engineering/oxocarbon.nvim",
+	"projekt0n/github-nvim-theme",
+	name = "github-theme",
+	lazy = false,
+	priority = 1000,
 	config = function()
-		vim.cmd.colorscheme("oxocarbon")
-		vim.opt.background = "dark"
-		vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+		require("github-theme").setup({})
+		vim.cmd.colorscheme("github_dark_dimmed")
 	end,
 }
