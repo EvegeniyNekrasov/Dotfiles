@@ -1,11 +1,7 @@
--- setup must be caled before loading
-
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>w", "<CMD>update<CR>")
 vim.keymap.set("n", "<leader>q", "<CMD>q<CR>")
-vim.keymap.set("n", "<leader>o", "<CMD>vsplit<CR>")
-vim.keymap.set("n", "<leader>p", "<CMD>split<CR>")
 vim.keymap.set("n", "<leader>l", "<CMD>:Lazy<CR>")
 
 local normal_hl = vim.api.nvim_get_hl(0, { name = "Normal" })
@@ -26,7 +22,6 @@ local function toggle_transparency()
 end
 
 vim.keymap.set("n", "<leader>tt", toggle_transparency, { desc = "Toggle bg transparency" })
-local global = vim.g
 local o = vim.opt
 
 o.number = true
