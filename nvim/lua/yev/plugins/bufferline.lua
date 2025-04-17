@@ -32,6 +32,34 @@ return {
 			desc = "Go to buffer 4",
 		},
 		{
+			"<leader>5",
+			function()
+				require("bufferline").go_to(5)
+			end,
+			desc = "Go to buffer 5",
+		},
+		{
+			"<leader>6",
+			function()
+				require("bufferline").go_to(6)
+			end,
+			desc = "Go to buffer 6",
+		},
+		{
+			"<leader>7",
+			function()
+				require("bufferline").go_to(7)
+			end,
+			desc = "Go to buffer 7",
+		},
+		{
+			"<leader>8",
+			function()
+				require("bufferline").go_to(8)
+			end,
+			desc = "Go to buffer 8",
+		},
+		{
 			"<leader>0",
 			"<cmd>bdelete<CR>",
 			desc = "Cerrar el buffer actual",
